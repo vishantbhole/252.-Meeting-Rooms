@@ -25,3 +25,6 @@ if __name__ == "__main__":
     sol = Solution()
     intervals = [Interval(0, 30), Interval(5, 10), Interval(15, 20)]
     print("Output is:", sol.canAttendMeetings(intervals))  # Expected False [web:2][web:4][web:6]
+
+    intervals2 = [Interval(5, 8), Interval(9, 15)]
+    print("Output is:", sol.canAttendMeetings(intervals2))
