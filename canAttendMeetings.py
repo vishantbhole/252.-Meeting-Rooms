@@ -20,3 +20,8 @@ class Solution:
             if curr_it.start < prev_it.end:
                 return False
         return True
+
+if __name__ == "__main__":
+    sol = Solution()
+    intervals = [Interval(0, 30), Interval(5, 10), Interval(15, 20)]
+    print("Output is:", sol.canAttendMeetings(intervals))  # Expected False [web:2][web:4][web:6]
