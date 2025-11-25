@@ -17,3 +17,6 @@ class Solution:
         for i in range(1, len(intervals)):
             prev_it = intervals[i - 1]
             curr_it = intervals[i]
+            if curr_it.start < prev_it.end:
+                return False
+        return True
